@@ -1,6 +1,6 @@
 # Sampling with Mirrored Stein Operators
 
-Code for reproducing results in [https://arxiv.org/abs/2106.12506]https://arxiv.org/abs/2106.12506
+Code for reproducing results in [https://arxiv.org/abs/2106.12506](https://arxiv.org/abs/2106.12506)
 
 ## Requirements
 
