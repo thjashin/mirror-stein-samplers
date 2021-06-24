@@ -1,6 +1,15 @@
 # Sampling with Mirrored Stein Operators
 
-Code for reproducing results in [https://arxiv.org/abs/2106.12506](https://arxiv.org/abs/2106.12506)
+Code for reproducing the experimental results in [https://arxiv.org/abs/2106.12506](https://arxiv.org/abs/2106.12506)
+
+```
+@article{shi2021sampling,
+  title={Sampling with Mirrored Stein Operators}, 
+  author={Jiaxin Shi and Chang Liu and Lester Mackey},
+  journal={arXiv preprint arXiv:2106.12506},
+  year={2021}
+}
+```
 
 ## Requirements
 
