@@ -4,7 +4,7 @@ Code for reproducing the experimental results in [https://arxiv.org/abs/2106.125
 
 ---
 
-### Update:
+### Update (2023/2/13):
 
 We added a new example of sampling from a uniform distribution in a $[-1, 1]^d$ rectangle in `uniform.ipynb`. 
 
