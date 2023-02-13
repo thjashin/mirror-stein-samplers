@@ -1,9 +1,8 @@
 import tensorflow as tf
 import numpy as np
-from tensorflow.python.ops.gen_math_ops import cross
 
 
-@tf.function(experimental_compile=True)
+@tf.function
 def cross_diff(x1, x2):
     x1 = x1[..., :, None, :]
     x2 = x2[..., None, :, :]
@@ -42,6 +41,8 @@ def rbf(x1, x2, kernel_width2=None, left_grad=False):
     if kernel_width2 is None:
         kernel_width2 = heuristic_kernel_width(squared_dists)
         return_width = True
+    else:
+        kernel_width2 = tf.constant(kernel_width2, dtype=x1.dtype)
     # k: [..., K, K]
     k = tf.exp(-squared_dists / kernel_width2[..., None, None])
     ret.append(k)
@@ -70,6 +71,8 @@ def imq(x1, x2, kernel_width2=None, left_grad=False):
     if kernel_width2 is None:
         kernel_width2 = heuristic_kernel_width(squared_dists)
         return_width = True
+    else:
+        kernel_width2 = tf.constant(kernel_width2, dtype=x1.dtype)
     inner = 1. + squared_dists / kernel_width2[..., None, None]
     k = 1. / tf.sqrt(inner)
     ret.append(k)

@@ -2,14 +2,14 @@
 
 Code for reproducing the experimental results in [https://arxiv.org/abs/2106.12506](https://arxiv.org/abs/2106.12506)
 
-```
-@article{shi2021sampling,
-  title={Sampling with Mirrored {S}tein Operators}, 
-  author={Jiaxin Shi and Chang Liu and Lester Mackey},
-  journal={arXiv preprint arXiv:2106.12506},
-  year={2021}
-}
-```
+---
+
+### Update:
+
+We added a new example of sampling from a uniform distribution in a $[-1, 1]^d$ rectangle in `uniform.ipynb`. 
+
+---
+
 
 ## Requirements
 
@@ -51,3 +51,16 @@ Note: The `R_HOME` variable must be set correctly before running the scripts.
 
 - Run script: `lr.py`
 - Plotting: `plot_lr.ipynb`
+
+
+## Citation
+
+If you find this repository useful, please cite:
+```
+@article{shi2021sampling,
+  title={Sampling with Mirrored {S}tein Operators}, 
+  author={Jiaxin Shi and Chang Liu and Lester Mackey},
+  journal={International Conference on Learning Representations},
+  year={2022}
+}
+```

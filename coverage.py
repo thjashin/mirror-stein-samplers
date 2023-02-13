@@ -41,7 +41,7 @@ def run(target, theta_init, method="svmd", K=50, n_chain=100):
     for t in trange:
         if method == "svmd":
             eta_grad = svmd_update_v2(target, theta, kernel, n_eigen_threshold=0.98)
-        elif method == "svgd":
+        elif method == "msvgd":
             eta_grad = svgd_update(target, eta, theta, kernel)
         else:
             raise NotImplementedError()
@@ -82,7 +82,7 @@ nonneg_map = NonnegativeEntropicMap()
 
 df = pd.DataFrame(columns=["target", "method", "covered", "width"])
 df_rows = []
-methods = ["default", "svgd", "svmd"]
+methods = ["default", "msvgd", "svmd"]
 # methods = ["default"]
 target_coverages = [0.8, 0.85, 0.9, 0.95, 0.98, 0.99]
 for i in range(nrep):
