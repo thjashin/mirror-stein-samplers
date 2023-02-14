@@ -6,14 +6,14 @@ Code for reproducing the experimental results in [https://arxiv.org/abs/2106.125
 
 ### Update (2023/2/13):
 
-We added a new example of sampling from a uniform distribution in a $[-1, 1]^d$ rectangle in `uniform.ipynb`. 
+We added a new example of sampling from a uniform distribution in a $[-1, 1]^d$ rectangle in [uniform.ipynb](/uniform.ipynb). 
 
 ---
 
 
 ## Requirements
 
-- R >= 4.0.4
+- R >= 4.0.4 (only needed for the non-toy post-selection inference experiments)
 - python >= 3.8
 ```
 rpy2 >= 3.4.4
@@ -33,24 +33,24 @@ absl-py
 
 ### Approximation quality on the simplex
 
-* Sparse Dirichlet: `dirichlet.ipynb`
-* Quadratic: `quad.ipynb`
+* Sparse Dirichlet: [dirichlet.ipynb](/dirichlet.ipynb)
+* Quadratic: [quad.ipynb](/quad.ipynb)
 
 ### Confidence intervals for post-selection inference
 
 Note: The `R_HOME` variable must be set correctly before running the scripts.
 
 - Simulation
-    - 2D example: `selective_inf.ipynb`
-    - Nominal coverage vs. actual coverage: `coverage.py`
-    - Coverage vs. number of samples: `coverage_wrt_k.py`
-    - Plotting: `plot_coverage.ipynb`
-- HIV drug resistance: `hiv.ipynb`
+    - 2D example: [selective_inf.ipynb](/selective_inf.ipynb)
+    - Nominal coverage vs. actual coverage: [coverage.py](/coverage.py)
+    - Coverage vs. number of samples: [coverage_wrt_k.py](/coverage_wrt_k.py)
+    - Plotting: [plot_coverage.ipynb](/plot_coverage.ipynb)
+- HIV drug resistance: [hiv.ipynb](/hiv.ipynb)
 
 ### Large-scale posterior inference with non-Euclidean geometry
 
-- Run script: `lr.py`
-- Plotting: `plot_lr.ipynb`
+- Run script: [lr.py](/lr.py)
+- Plotting: [plot_lr.ipynb](/plot_lr.ipynb)
 
 
 ## Citation
